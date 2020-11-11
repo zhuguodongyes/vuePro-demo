@@ -35,6 +35,7 @@ router.beforeEach((to, form, next) => {
 //通过components下的index.js文件导入组件
 import components from './components/index'
 //对导入的组件进行全局组件注册
+
 Object.keys(components).forEach((key) => {
 	Vue.component(key, components[key])
 });
